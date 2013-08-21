@@ -17,7 +17,7 @@ dimensions      [0 0 0 1 0 0 0];
 internalField   uniform 400;
 boundaryField
 {
-    tailSolid            
+    tail            
     {
         type            oscillatingFixedValue;
         refValue        uniform 400;
