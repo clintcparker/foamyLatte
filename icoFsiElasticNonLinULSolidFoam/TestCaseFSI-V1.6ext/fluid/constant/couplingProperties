@@ -20,10 +20,10 @@ FoamFile
     object          couplingProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-solidPatch      tailSolid;
-solidZone       tailSolidZone;
-fluidPatch      tailFluid;
-fluidZone       tailFluidZone;
+solidPatch      tail;
+solidZone       tailZone;
+fluidPatch      tail;
+fluidZone       tailZone;
 //for both the solid and fluid the HronTurek tutorial case has zone information
 //I'm not sure it's necessary here due to mesh generation
 //movingRegion    region0;
