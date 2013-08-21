@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM Extend Project: Open source CFD        |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      www.extend-project.de                 |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 1.6-ext-a0e4ecb4d630
+Exec   : setSet -case fluid -batch fluid/batch.setSet
+Date   : Aug 20 2013
+Time   : 20:40:48
+Host   : clint-Parallels-Virtual-Platform
+PID    : 22558
+Case   : ./fluid
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Time:0  cells:1136  faces:4630  points:2446  patches:6  bb:(0 0 0) (2 1.5 0.01)
+
+Reading commands from file "fluid/batch.setSet"
+Please type 'help', 'quit' or a set command after prompt.
+Doing:"faceSet tailFluidZone new patchToFace tailFluid"
+    Set:tailFluidZone  Size:0  Action:new
+    Adding all faces of patch tailFluid ...
+    Found matching patch tailFluid with 36 faces.
+    Writing tailFluidZone (size 36) to "constant/polyMesh/sets/tailFluidZone" and to vtk file "VTK/tailFluidZone/tailFluidZone_1.vtk"
+
+End of batch file
+
+End
+

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+currDir=`pwd`
+application=`basename $currDir`
+case="TestCaseFSI-V1.6ext"
+
+tutorialPath=`icoFsiElasticNonLinULSolidFoam`
+. $WM_PROJECT_DIR/bin/tools/CleanFunctions
+
+(cd $case/fluid; cleanTimeDirectories)
+(cd $case/solid; cleanTimeDirectories)
+(cd $case; ./removeSerialLinks fluid solid)

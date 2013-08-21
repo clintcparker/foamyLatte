@@ -1,0 +1,34 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM Extend Project: Open source CFD        |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      www.extend-project.de                 |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 1.6-ext-a0e4ecb4d630
+Exec   : setsToZones -case fluid -noFlipMap
+Date   : Aug 20 2013
+Time   : 20:40:48
+Host   : clint-Parallels-Virtual-Platform
+PID    : 22560
+Case   : ./fluid
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Searched : "constant/polyMesh/sets"
+Found    : 
+1
+(
+tailFluidZone
+)
+
+
+Adding set tailFluidZone as a faceZone.
+Writing mesh.
+
+End

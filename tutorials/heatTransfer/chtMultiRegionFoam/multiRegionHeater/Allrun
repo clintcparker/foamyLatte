@@ -1,0 +1,24 @@
+#!/bin/sh
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+rm -r constant/polyMesh/sets
+runApplication blockMesh
+runApplication setSet -batch makeCellSets.setSet
+rm constant/polyMesh/sets/*_old
+runApplication setsToZones -noFlipMap
+runApplication splitMeshRegions -cellZones
+cp 0/* 0.001/bottomAir/
+cp 0/* 0.001/heater/
+cp 0/* 0.001/leftSolid/
+cp 0/* 0.001/rightSolid/
+cp 0/* 0.001/topAir/
+changeDictionary -region bottomAir
+changeDictionary -region topAir
+changeDictionary -region heater
+changeDictionary -region leftSolid
+changeDictionary -region rightSolid
+runApplication chtMultiRegionFoam
+
+
+

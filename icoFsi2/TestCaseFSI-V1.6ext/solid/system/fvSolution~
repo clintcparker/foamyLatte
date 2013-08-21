@@ -1,0 +1,63 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class           dictionary;
+    object          fvSolution;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+solvers
+{
+    T               ICCG 1e-09 0.01;
+    U               ICCG 1e-09 0.01;
+//    U               AMG 1e-09 0.01 100;
+}
+
+//Below copied from HronTurek tutorial
+/*solvers*/
+/*{*/
+/*    DU*/
+/*    {*/
+/*	solver GAMG;*/
+/*        tolerance        1e-8;*/
+/*        relTol           0.01;*/
+/*        minIter          1;*/
+/*        maxIter          1000;*/
+
+/*        smoother         GaussSeidel;*/
+/*        nPreSweeps       0;*/
+/*        nPostSweeps      2;*/
+/*        nFinestSweeps    2;*/
+
+/*	scaleCorrection true;*/
+/*        directSolveCoarsest false;*/
+/*			   		      */
+
+/*        cacheAgglomeration true;*/
+
+/*        nCellsInCoarsestLevel 20;*/
+/*        agglomerator     faceAreaPair;*/
+/*        mergeLevels      1;*/
+/*    };*/
+
+stressedFoam
+{
+    nCorrectors     50;
+    U               1e-07;
+}
+// ************************************************************************* //

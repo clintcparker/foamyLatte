@@ -1,0 +1,611 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM Extend Project: Open source CFD        |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      www.extend-project.de                 |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 1.6-ext-a0e4ecb4d630
+Exec   : checkMesh
+Date   : Aug 11 2013
+Time   : 16:19:44
+Host   : clint-Parallels-Virtual-Platform
+PID    : 4716
+Case   : /home/clint/OpenFOAM/clint-1.6-ext/run/solidMechanicsTutorials/icoFsiElasticNonLinULSolidFoam/HronTurekFsi/fluid
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Time = 0
+
+Mesh stats
+    all points:           42800
+    live points:           42800
+    all faces:            84220
+    live faces:            84220
+    internal faces:   41420
+    cells:            20940
+    boundary patches: 7
+    point zones:      0
+    face zones:       1
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     20940
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces ...
+    Patch               Faces    Points   Surface topology                  
+    plate               168      338      ok (non-closed singly connected)  
+    outlet              84       170      ok (non-closed singly connected)  
+    inlet               80       162      ok (non-closed singly connected)  
+    cylinder            120      242      ok (non-closed singly connected)  
+    bottom              234      470      ok (non-closed singly connected)  
+    top                 234      470      ok (non-closed singly connected)  
+    frontAndBackPlanes  41880    42800    ok (non-closed singly connected)  
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (1.00213e-17 2.15269e-16 -2.34355e-18) Threshold = 1e-06 OK.
+    Max cell openness = 2.32507e-16 OK.
+    Max aspect ratio = 56.0232 OK.
+    Minumum face area = 2.26567e-06. Maximum face area = 0.00482124.  Face area magnitudes OK.
+    Min volume = 1.14797e-07. Max volume = 2.40183e-05.  Total volume = 0.0511818.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3823 average: 4.94237 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504107 OK.
+
+Mesh OK.
+
+Time = 0.05
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-5.72645e-18 1.56676e-16 -3.79377e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.14798e-16 OK.
+    Max aspect ratio = 56.0208 OK.
+    Minumum face area = 2.27113e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.15074e-07. Max volume = 2.40185e-05.  Total volume = 0.0511823.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3713 average: 4.94203 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.514861 OK.
+
+Mesh OK.
+
+Time = 0.1
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 5.72645e-20) Threshold = 1e-06 OK.
+    Max cell openness = 2.14798e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26668e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14848e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3947 average: 4.94331 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.506525 OK.
+
+Mesh OK.
+
+Time = 0.15
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45517e-18 1.56675e-16 -5.32559e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.19155e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26782e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14906e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.388 average: 4.94366 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 0.2
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -4.99633e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.19155e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26607e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14817e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3889 average: 4.9424 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504688 OK.
+
+Mesh OK.
+
+Time = 0.25
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -6.72857e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.20289e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26557e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14792e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3922 average: 4.94372 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.506943 OK.
+
+Mesh OK.
+
+Time = 0.3
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -1.42016e-18) Threshold = 1e-06 OK.
+    Max cell openness = 2.35463e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26494e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.1476e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3866 average: 4.94239 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504779 OK.
+
+Mesh OK.
+
+Time = 0.35
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -1.05224e-18) Threshold = 1e-06 OK.
+    Max cell openness = 2.13786e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26607e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14817e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3849 average: 4.94292 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504688 OK.
+
+Mesh OK.
+
+Time = 0.4
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -1.12095e-18) Threshold = 1e-06 OK.
+    Max cell openness = 2.14832e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26605e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14816e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3854 average: 4.94313 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504323 OK.
+
+Mesh OK.
+
+Time = 0.45
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -1.01501e-18) Threshold = 1e-06 OK.
+    Max cell openness = 2.1682e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26494e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.1476e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.392 average: 4.9425 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504779 OK.
+
+Mesh OK.
+
+Time = 0.5
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -5.54034e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.14798e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26494e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.1476e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3864 average: 4.9431 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504779 OK.
+
+Mesh OK.
+
+Time = 0.55
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-5.92116e-18 1.56676e-16 -1.15245e-18) Threshold = 1e-06 OK.
+    Max cell openness = 2.18838e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3829 average: 4.94239 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504742 OK.
+
+Mesh OK.
+
+Time = 0.6
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -2.6628e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.15703e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26494e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.1476e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3785 average: 4.94281 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504779 OK.
+
+Mesh OK.
+
+Time = 0.65
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 -6.8288e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.14798e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3915 average: 4.94246 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504323 OK.
+
+Mesh OK.
+
+Time = 0.7
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 2.33353e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.20869e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3836 average: 4.94293 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.504323 OK.
+
+Mesh OK.
+
+Time = 0.75
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.44948e-16 -1.43161e-21) Threshold = 1e-06 OK.
+    Max cell openness = 2.15703e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3943 average: 4.94314 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.506525 OK.
+
+Mesh OK.
+
+Time = 0.8
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 1.20256e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.25612e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3917 average: 4.94325 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.506525 OK.
+
+Mesh OK.
+
+Time = 0.85
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 2.14742e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.25612e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.394 average: 4.94373 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 0.9
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.44948e-16 5.84099e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.14802e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26355e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.1469e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.4024 average: 4.94365 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 0.95
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.44948e-16 6.15594e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.6267e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3904 average: 4.94398 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 1
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.44948e-16 5.69782e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.6267e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26355e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.1469e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3904 average: 4.94382 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 1.05
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 7.45871e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.21641e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3919 average: 4.94379 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 1.1
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.44948e-16 5.4974e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.18794e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3927 average: 4.94369 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 1.15
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.44948e-16 9.39139e-19) Threshold = 1e-06 OK.
+    Max cell openness = 2.21656e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3887 average: 4.94342 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+Time = 1.2
+
+
+Checking geometry...
+    This is a 2-D mesh
+    Overall domain bounding box (0 0 -0.025334) (2.5 0.41 0.025334)
+    Mesh (non-empty, non-wedge) directions (1 1 0)
+    Mesh (non-empty) directions (1 1 0)
+    Mesh (non-empty, non-wedge) dimensions 2
+    All edges aligned with or perpendicular to non-empty directions.
+    Boundary openness (-4.45518e-18 1.56676e-16 1.38723e-18) Threshold = 1e-06 OK.
+    Max cell openness = 2.25612e-16 OK.
+    Max aspect ratio = 56.0241 OK.
+    Minumum face area = 2.26469e-06. Maximum face area = 0.00482106.  Face area magnitudes OK.
+    Min volume = 1.14747e-07. Max volume = 2.40185e-05.  Total volume = 0.0511819.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.3855 average: 4.94344 Threshold = 70
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.50643 OK.
+
+Mesh OK.
+
+End
+

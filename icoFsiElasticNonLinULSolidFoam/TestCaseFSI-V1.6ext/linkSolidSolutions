@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd fluid
+for i in $(ls -I *.Open* -I constant -I system -I 0 -I log*);do
+    cd ../solid
+    ln -s ../fluid/$i/solid $i
+    cd ../fluid
+done
+cd ..
+touch solid/solid.OpenFOAM
+echo ...
+echo Done linking solid solutions for use with paraFoam.
+echo Run bash: "'paraFoam -case fluid'" and open file "'solid.OpenFoam'" from 
+echo solid directory for postprocessing of both domains.
+echo ...

@@ -1,0 +1,75 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class           dictionary;
+    object          fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ddtSchemes
+{
+    default     Euler;
+/*    default     none;*/
+/*//    ddt(DU)     Euler;*/
+/*    ddt(DU)     backward;*/
+}
+d2dt2Schemes
+{
+    default     Euler;
+/*    default     none;*/
+}
+gradSchemes
+{
+    default         Gauss linear;
+/*    default         none;*/
+    grad(DU)         Gauss linear;
+    grad(Us)        Gauss linear;
+    snGradCorr(DU)  Gauss linear;
+    grad(T)         Gauss linear;
+}
+divSchemes
+{
+    default         none;
+    div(sigma)      Gauss linear;
+}
+laplacianSchemes
+{
+    default         none;
+    laplacian(DDU,DU) Gauss linear corrected;
+    laplacian(DT,T) Gauss linear corrected;
+}
+interpolationSchemes
+{
+    default         linear;
+/*    default                  none;*/
+/*    interpolate(sigma) linear;*/
+/*    interpolate(mu) linear;*/
+}
+snGradSchemes
+{
+    default         corrected;
+/*    default none;*/
+/*//    snGrad(U)       corrected;*/
+}
+fluxRequired
+{
+    default         no;
+    DU;
+    T;
+}
+// ************************************************************************* //

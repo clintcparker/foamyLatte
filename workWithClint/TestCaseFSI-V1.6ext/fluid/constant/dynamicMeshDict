@@ -1,0 +1,39 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class           dictionary;
+    object          motionProperties;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dynamicFvMesh 	dynamicMotionSolverFvMesh;
+
+twoDMotion      yes;
+
+solver          laplaceFaceDecomposition;
+
+diffusivity     quadratic; //may need to append the following: inverseDistance 1(plate); with something other than plate
+
+frozenDiffusion on;	//may need to be yes vs. on
+
+distancePatches 
+(
+    tailFluid
+);
+// ************************************************************************* //
