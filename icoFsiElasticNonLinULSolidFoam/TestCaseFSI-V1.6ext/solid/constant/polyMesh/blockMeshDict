@@ -37,7 +37,7 @@ edges
 );
 patches
 (
-    patch tailSolid
+    patch tail
     (
         (0 4 7 3)
         (7 6 2 3)
