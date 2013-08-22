@@ -37,7 +37,7 @@ gradSchemes
 //    snGradCorr(U) Gauss linear;
 //    grad(U) Gauss linear;
 //    snGradCorr(p) Gauss linear;
-//    snGradCorr(cellMotionU) Gauss linear;
+    snGradCorr(cellMotionU) Gauss linear;
 }
 
 divSchemes
@@ -52,7 +52,8 @@ laplacianSchemes
     default         none;
     laplacian(nu,U) Gauss linear corrected;
     laplacian((1|A(U)),p) Gauss linear corrected;
-//HronTurek has another line here:     laplacian(diffusivity,cellMotionU) Gauss linear corrected;
+//HronTurek has another line here:     
+    laplacian(diffusivity,cellMotionU) Gauss linear corrected;
     laplacian(DT,T) Gauss linear corrected;
 
 }
