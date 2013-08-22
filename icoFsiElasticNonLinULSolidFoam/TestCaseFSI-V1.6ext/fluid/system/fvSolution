@@ -50,6 +50,29 @@ solvers
 	tolerance	1e-05;
 	relTol		0;
     };
+    
+    cellMotionU
+    {
+	solver          GAMG;
+        tolerance        1e-6;
+       	relTol           1e-3;
+       	minIter          1;
+       	maxIter          1000;
+
+       	smoother         GaussSeidel;
+       	nPreSweeps       0;
+       	nPostSweeps      2;
+       	nFinestSweeps    2;
+		
+        scaleCorrection true;
+        directSolveCoarsest false;
+				   		      
+        cacheAgglomeration true;
+
+	nCellsInCoarsestLevel 20;
+        agglomerator     faceAreaPair;
+        mergeLevels      1;
+    }
 }
 
 //HronTurek tutorial has a completely different solvers section as seen below:
