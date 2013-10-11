@@ -21,7 +21,7 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {
-    tailFluid
+    tail
     {
         type            movingWallVelocity;
         value           uniform (0 0 0);
