@@ -29,7 +29,7 @@ FoamFile
         nFaces          30;
         startFace       2216;
     }
-    tailFluid
+    tail
     {
         type            patch;
         nFaces          36;

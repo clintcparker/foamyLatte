@@ -1,0 +1,144 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6-ext                               |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class       dictionary;
+    object      fvSolution;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    p PCG
+    {
+        preconditioner   DIC;
+        tolerance        1e-06;
+        relTol           0;
+    };
+
+    U PBiCG
+    {
+        preconditioner   DILU;
+        tolerance        1e-05;
+        relTol           0;
+    };
+
+    T PBiCG
+    {
+	preconditioner
+	{
+	    type	DILU;
+	}
+
+	minIter		0;
+	maxIter		500;
+	tolerance	1e-05;
+	relTol		0;
+    };
+    
+    cellMotionU
+    {
+	solver          GAMG;
+        tolerance        1e-6;
+       	relTol           1e-3;
+       	minIter          1;
+       	maxIter          1000;
+
+       	smoother         GaussSeidel;
+       	nPreSweeps       0;
+       	nPostSweeps      2;
+       	nFinestSweeps    2;
+		
+        scaleCorrection true;
+        directSolveCoarsest false;
+				   		      
+        cacheAgglomeration true;
+
+	nCellsInCoarsestLevel 20;
+        agglomerator     faceAreaPair;
+        mergeLevels      1;
+    }
+}
+
+//HronTurek tutorial has a completely different solvers section as seen below:
+/*{*/
+
+/*	p*/
+/*	{*/
+/*		solver          GAMG;*/
+/*    		tolerance       1e-06;*/
+/*    		relTol          0;*/
+/*    		minIter         1;*/
+/*    		maxIter         1000;*/
+/*    		smoother        GaussSeidel;*/
+/*    		nPreSweeps      0;*/
+/*    		nPostSweeps     2;*/
+/*    		nFinestSweeps   2;*/
+/*    		scaleCorrection true;*/
+/*    		directSolveCoarsest false;*/
+/*    		cacheAgglomeration true;*/
+/*    		nCellsInCoarsestLevel 20;*/
+/*    		agglomerator    faceAreaPair;*/
+/*    		mergeLevels     1;*/
+/*	};*/
+
+/*	cellMotionU*/
+/*    	{*/
+/*		solver          GAMG;*/
+/*        	tolerance        1e-6;*/
+/*        	relTol           1e-3;*/
+/*        	minIter          1;*/
+/*        	maxIter          1000;*/
+
+/*        	smoother         GaussSeidel;*/
+/*        	nPreSweeps       0;*/
+/*        	nPostSweeps      2;*/
+/*        	nFinestSweeps    2;*/
+/*		*/
+/*        	scaleCorrection true;*/
+/*        	directSolveCoarsest false;*/
+/*				   		      */
+/*        	 cacheAgglomeration true;*/
+
+/*		 nCellsInCoarsestLevel 20;*/
+/*        	 agglomerator     faceAreaPair;*/
+/*        	 mergeLevels      1;*/
+/*        };*/
+
+/*    	U*/
+/*    	{*/
+/*		solver PBiCG;*/
+/*		preconditioner   DILU;*/
+/*        	tolerance        1e-06;*/
+/*        	relTol           0;*/
+/*    	};*/
+/*}*/
+
+
+PISO
+{
+    nCorrectors     2;
+    nNonOrthogonalCorrectors 0;	//HronTurek tutorial uses a value of 1
+//HronTurek tutorial does not have the last two lines and instead has these:
+//    nOuterCorrectors 50;
+//    ddtPhiCorr no;
+    pRefCell        0;
+    pRefValue       0;
+}
+
+// ************************************************************************* //
